@@ -1,17 +1,19 @@
-React Project Template
-----------------------
+Memory Card
+-----------
 
-React Project Template
+Memory card using React
 
 Features
 --------
 
-- [ ] Wow, feature?
-- [ ] A really good feature
-- [ ] Good styling
+- [ ] Fetch images from Pokemon API
+- [ ] Description and card for each image
+- [ ] Randomize order of images every time one is picked
+- [ ] Points system for picking correct images in a row
+- [ ] Reset points upon picking an already picked image
+- [ ] Good style
 
 Credits
 -------
 
-Me, me, me!  
-[Or maybe someone else?]()
+[Pokemon images from Pokeapi](https://pokeapi.co/)
