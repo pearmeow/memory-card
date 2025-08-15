@@ -12,3 +12,15 @@ img {
     align-items: center;
     border-radius: 0;
 }
+
+@media (width <=600px) {
+    .card {
+        font-size: 10px;
+    }
+}
+
+@media (width >=1280px) {
+    .card {
+        font-size: 40px;
+    }
+}
