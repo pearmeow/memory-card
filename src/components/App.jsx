@@ -16,91 +16,30 @@ function App() {
         ferrothorn: false,
         gengar: false,
     });
+    let allPokemon = [];
+    for (let key in isClicked) {
+        allPokemon.push(key);
+    }
+    let randomOrder = [];
+    while (allPokemon.length > 0) {
+        let randInd = Math.floor(Math.random() * allPokemon.length);
+        randomOrder.push(
+            <Image
+                name={allPokemon[randInd]}
+                key={allPokemon[randInd]}
+                score={score}
+                setScore={setScore}
+                isClicked={isClicked}
+                setIsClicked={setIsClicked}
+            />,
+        );
+        allPokemon[randInd] = allPokemon[allPokemon.length - 1];
+        allPokemon.pop();
+    }
     return (
         <>
             <div className="score">Score: {score}</div>
-            <div className="container">
-                <Image
-                    name="sableye"
-                    key="sableye"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="giratina-origin"
-                    key="giratina-origin"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="pikachu"
-                    key="pikachu"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="mimikyu-disguised"
-                    key="mimikyu-disguised"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="mimikyu-busted"
-                    key="mimikyu-busted"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="metagross"
-                    key="metagross"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="gliscor"
-                    key="gliscor"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="giratina-altered"
-                    key="giratina-altered"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="ferrothorn"
-                    key="ferrothorn"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-                <Image
-                    name="gengar"
-                    key="gengar"
-                    score={score}
-                    setScore={setScore}
-                    isClicked={isClicked}
-                    setIsClicked={setIsClicked}
-                />
-            </div>
+            <div className="container">{randomOrder}</div>
         </>
     );
 }
