@@ -18,7 +18,7 @@ function App() {
     });
     return (
         <>
-            <p>{score}</p>
+            <div className="score">Score: {score}</div>
             <div className="container">
                 <Image
                     name="sableye"
