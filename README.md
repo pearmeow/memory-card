@@ -6,12 +6,12 @@ Memory card using React
 Features
 --------
 
-- [ ] Fetch images from Pokemon API
-- [ ] Description and card for each image
-- [ ] Randomize order of images every time one is picked
-- [ ] Points system for picking correct images in a row
-- [ ] Reset points upon picking an already picked image
-- [ ] Good style
+- [x] Fetch images from Pokemon API
+- [x] Description and card for each image
+- [x] Randomize order of images every time one is picked
+- [x] Points system for picking correct images in a row
+- [x] Reset points upon picking an already picked image
+- [x] Good style
 
 Credits
 -------
