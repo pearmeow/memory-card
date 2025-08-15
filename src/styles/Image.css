@@ -1,12 +1,13 @@
 img {
-    width: 150px;
+    width: 15vw;
 }
 
 .card {
     color: white;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 15vw;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     border-radius: 0;
