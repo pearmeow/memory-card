@@ -1,5 +1,5 @@
-import Image from "./Image.jsx";
-import "../styles/App.css";
+import Image from "./components/Image.jsx";
+import "./styles/App.css";
 import { useState } from "react";
 
 function App() {
